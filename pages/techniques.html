@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/techniques.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <title>Jujutsu Kaisen - Techniques</title>
+</head>
+<body>
+    <!-- Navbar -->
+    <header>
+        <a href="/index.html" class="logo">
+            <img src="/assets/Site-logo.png" class="logo-img" alt="Site Logo">
+        </a>
+
+        <div class="nav-container">
+            <nav>
+                <ul class="navlist">
+                    <li><a href="/index.html">HOME</a></li>
+                    <li><a href="/pages/story.html">STORY</a></li>
+                    <li><a href="/pages/character.html">CHARACTERS</a></li>
+                    <li><a href="#techniques-hero" class="active">TECHNIQUES</a></li>
+                    <li><a href="/pages/news.html">NEWS</a></li>
+                    <li><a href="/pages/about.html">ABOUT</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+      <!-- Techniques Page Header -->
+      <section class="characters-header" id="characters-header">
+        <div class="characters-header-overlay"></div>
+        <div class="characters-header-content">
+            <h1>TECHNIQUES</h1>
+            <p>In Jujutsu Kaisen, cursed techniques are innate supernatural abilities powered by cursed energy. From manipulating space to controlling shadows, these techniques form the core of a sorcerer's power.</p>
+        </div>
+    </section>
+
+    <!-- Main Content with Sidebar -->
+    <div class="techniques-container">
+        <!-- Sidebar Navigation -->
+        <aside class="techniques-sidebar">
+            <div class="sidebar-search">
+                <input type="text" placeholder="Search techniques..." id="techniqueSearch">
+                <button type="submit"><i class="fas fa-search"></i></button>
+            </div>
+            
+            <nav class="sidebar-nav">
+                <h3>CATEGORIES</h3>
+                <ul>
+                    <li><a href="#innate-techniques" class="active-category">Innate Techniques</a></li>
+                    <li><a href="#domain-expansions">Domain Expansions</a></li>
+                    <li><a href="#shikigami">Shikigami</a></li>
+                    <li><a href="#cursed-tools">Cursed Tools</a></li>
+                    <li><a href="#cursed-objects">Cursed Objects</a></li>
+                </ul>
+            </nav>
+            
+            <div class="sidebar-filters">
+                <h3>FILTER BY</h3>
+                <div class="filter-group">
+                    <h4>User</h4>
+                    <div class="filter-options">
+                        <label><input type="checkbox" name="user" value="gojo"> Satoru Gojo</label>
+                        <label><input type="checkbox" name="user" value="sukuna"> Ryomen Sukuna</label>
+                        <label><input type="checkbox" name="user" value="megumi"> Megumi Fushiguro</label>
+                        <label><input type="checkbox" name="user" value="nobara"> Nobara Kugisaki</label>
+                        <label><input type="checkbox" name="user" value="more"> More...</label>
+                    </div>
+                </div>
+                
+                <div class="filter-group">
+                    <h4>Difficulty</h4>
+                    <div class="filter-options">
+                        <label><input type="checkbox" name="difficulty" value="basic"> Basic</label>
+                        <label><input type="checkbox" name="difficulty" value="intermediate"> Intermediate</label>
+                        <label><input type="checkbox" name="difficulty" value="advanced"> Advanced</label>
+                        <label><input type="checkbox" name="difficulty" value="special"> Special Grade</label>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="sidebar-featured">
+                <h3>FEATURED</h3>
+                <div class="featured-technique-card">
+                    <img src="assets/techniques/unlimited-void.png" alt="Unlimited Void">
+                    <div class="featured-technique-info">
+                        <h4>Unlimited Void</h4>
+                        <p>Gojo's Domain Expansion</p>
+                    </div>
+                </div>
+            </div>
+        </aside>
+        
+        <!-- Main Content Area -->
+        <main class="techniques-main">
+            <!-- Innate Techniques Section -->
+            <section id="innate-techniques" class="technique-section">
+                <h2 class="technique-category-title">INNATE TECHNIQUES</h2>
+                <p class="technique-category-description">Innate techniques are abilities inherited through bloodlines or developed naturally by sorcerers. They form the base of a jujutsu sorcerer's fighting style.</p>
+                
+                <div class="techniques-grid">
+                    <!-- Technique 1 -->
+                    <div class="technique-detail-card">
+                        <div class="technique-image">
+                            <img src="assets/techniques/limitless.png" alt="Limitless Technique">
+                        </div>
+                        <div class="technique-details">
+                            <h3>Limitless</h3>
+                            <p class="technique-user"><i class="fas fa-user"></i> Satoru Gojo</p>
+                            <p class="technique-description">The Limitless allows manipulation of space at an atomic level, creating an "infinity" between the user and their surroundings. When paired with the Six Eyes, this technique becomes nearly invincible.</p>
+                            <div class="technique-abilities">
+                                <span class="ability-tag">Infinity</span>
+                                <span class="ability-tag">Blue</span>
+                                <span class="ability-tag">Red</span>
+                                <span class="ability-tag">Purple</span>
+                            </div>
+                            <button class="learn-more-btn">Learn More</button>
+                        </div>
+                    </div>
+                    
+                    <!-- Technique 2 -->
+                    <div class="technique-detail-card">
+                        <div class="technique-image">
+                            <img src="assets/techniques/ten-shadows.png" alt="Ten Shadows Technique">
+                        </div>
+                        <div class="technique-details">
+                            <h3>Ten Shadows Technique</h3>
+                            <p class="technique-user"><i class="fas fa-user"></i> Megumi Fushiguro</p>
+                            <p class="technique-description">Allows the user to summon and control ten different shikigami. Each shikigami has unique abilities and can be combined for stronger effects.</p>
+                            <div class="technique-abilities">
+                                <span class="ability-tag">Divine Dogs</span>
+                                <span class="ability-tag">Nue</span>
+                                <span class="ability-tag">Toad</span>
+                                <span class="ability-tag">Max Elephant</span>
+                            </div>
+                            <button class="learn-more-btn">Learn More</button>
+                        </div>
+                    </div>
+                    
+                    <!-- Technique 3 -->
+                    <div class="technique-detail-card">
+                        <div class="technique-image">
+                            <img src="assets/techniques/straw-doll.png" alt="Straw Doll Technique">
+                        </div>
+                        <div class="technique-details">
+                            <h3>Straw Doll Technique</h3>
+                            <p class="technique-user"><i class="fas fa-user"></i> Nobara Kugisaki</p>
+                            <p class="technique-description">Using a hammer and nails, this technique creates resonance between a straw doll and target, allowing damage to be transferred through a voodoo-like effect.</p>
+                            <div class="technique-abilities">
+                                <span class="ability-tag">Resonance</span>
+                                <span class="ability-tag">Hairpin</span>
+                                <span class="ability-tag">Straw Doll Nail</span>
+                            </div>
+                            <button class="learn-more-btn">Learn More</button>
+                        </div>
+                    </div>
+                    
+                    <!-- Technique 4 -->
+                    <div class="technique-detail-card">
+                        <div class="technique-image">
+                            <img src="assets/techniques/blood-manipulation.png" alt="Blood Manipulation">
+                        </div>
+                        <div class="technique-details">
+                            <h3>Blood Manipulation</h3>
+                            <p class="technique-user"><i class="fas fa-user"></i> Choso</p>
+                            <p class="technique-description">Allows precise control over the user's blood, shaping it into weapons or projectiles and manipulating its properties.</p>
+                            <div class="technique-abilities">
+                                <span class="ability-tag">Flowing Red Scale</span>
+                                <span class="ability-tag">Piercing Blood</span>
+                                <span class="ability-tag">Supernova</span>
+                            </div>
+                            <button class="learn-more-btn">Learn More</button>
+                        </div>
+                    </div>
+                    
+                    <!-- Technique 5 -->
+                    <div class="technique-detail-card">
+                        <div class="technique-image">
+                            <img src="assets/techniques/boogie-woogie.png" alt="Boogie Woogie">
+                        </div>
+                        <div class="technique-details">
+                            <h3>Boogie Woogie</h3>
+                            <p class="technique-user"><i class="fas fa-user"></i> Aoi Todo</p>
+                            <p class="technique-description">Allows the user to instantly swap the positions of any two objects, including themselves, by clapping their hands together.</p>
+                            <div class="technique-abilities">
+                                <span class="ability-tag">Position Swap</span>
+                                <span class="ability-tag">Strategic Combat</span>
+                            </div>
+                            <button class="learn-more-btn">Learn More</button>
+                        </div>
+                    </div>
+                    
+                    <!-- Technique 6 -->
+                    <div class="technique-detail-card">
+                        <div class="technique-image">
+                            <img src="assets/techniques/cursed-speech.png" alt="Cursed Speech">
+                        </div>
+                        <div class="technique-details">
+                            <h3>Cursed Speech</h3>
+                            <p class="technique-user"><i class="fas fa-user"></i> Toge Inumaki</p>
+                            <p class="technique-description">Words spoken with cursed energy become commands that the target is compelled to follow, though stronger targets can resist the effects.</p>
+                            <div class="technique-abilities">
+                                <span class="ability-tag">Don't Move</span>
+                                <span class="ability-tag">Blast Away</span>
+                                <span class="ability-tag">Explode</span>
+                            </div>
+                            <button class="learn-more-btn">Learn More</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- Domain Expansions Preview -->
+            <section id="domain-expansions" class="technique-section">
+                <h2 class="technique-category-title">DOMAIN EXPANSIONS</h2>
+                <p class="technique-category-description">Domain Expansion is the ultimate application of a cursed technique, creating a pocket dimension where the user's technique is amplified and guaranteed to hit.</p>
+                
+                <!-- Preview Cards with "View All" -->
+                <div class="preview-grid">
+                    <div class="preview-card">
+                        <img src="assets/techniques/malevolent-shrine.png" alt="Malevolent Shrine">
+                        <h4>Malevolent Shrine</h4>
+                        <p>User: Ryomen Sukuna</p>
+                    </div>
+                    
+                    <div class="preview-card">
+                        <img src="assets/techniques/unlimited-void.png" alt="Unlimited Void">
+                        <h4>Unlimited Void</h4>
+                        <p>User: Satoru Gojo</p>
+                    </div>
+                    
+                    <div class="preview-card">
+                        <img src="assets/techniques/chimera-shadow-garden.png" alt="Chimera Shadow Garden">
+                        <h4>Chimera Shadow Garden</h4>
+                        <p>User: Megumi Fushiguro</p>
+                    </div>
+                    
+                    <a href="#" class="view-all-card">
+                        <div class="view-all-content">
+                            <i class="fas fa-arrow-right"></i>
+                            <span>View All Domains</span>
+                        </div>
+                    </a>
+                </div>
+            </section>
+            
+            <!-- Shikigami Preview -->
+            <section id="shikigami" class="technique-section">
+                <h2 class="technique-category-title">SHIKIGAMI</h2>
+                <p class="technique-category-description">Shikigami are familiar spirits summoned and controlled by jujutsu sorcerers, often tied to specific cursed techniques.</p>
+                
+                <!-- Preview with "View All" -->
+                <div class="preview-grid">
+                    <div class="preview-card">
+                        <img src="assets/techniques/divine-dogs.png" alt="Divine Dogs">
+                        <h4>Divine Dogs</h4>
+                        <p>User: Megumi Fushiguro</p>
+                    </div>
+                    
+                    <div class="preview-card">
+                        <img src="assets/techniques/nue.png" alt="Nue">
+                        <h4>Nue</h4>
+                        <p>User: Megumi Fushiguro</p>
+                    </div>
+                    
+                    <div class="preview-card">
+                        <img src="assets/techniques/totality.png" alt="Totality">
+                        <h4>Totality</h4>
+                        <p>User: Yuki Tsukumo</p>
+                    </div>
+                    
+                    <a href="#" class="view-all-card">
+                        <div class="view-all-content">
+                            <i class="fas fa-arrow-right"></i>
+                            <span>View All Shikigami</span>
+                        </div>
+                    </a>
+                </div>
+            </section>
+            
+            <!-- Cursed Tools Preview -->
+            <section id="cursed-tools" class="technique-section">
+                <h2 class="technique-category-title">CURSED TOOLS</h2>
+                <p class="technique-category-description">Cursed tools are weapons imbued with cursed energy, providing special properties and abilities to their users.</p>
+                
+                <!-- Preview with "View All" -->
+                <div class="preview-grid">
+                    <div class="preview-card">
+                        <img src="assets/techniques/playful-cloud.png" alt="Playful Cloud">
+                        <h4>Playful Cloud</h4>
+                        <p>Used by: Maki Zenin</p>
+                    </div>
+                    
+                    <div class="preview-card">
+                        <img src="assets/techniques/inverted-spear.png" alt="Inverted Spear of Heaven">
+                        <h4>Inverted Spear of Heaven</h4>
+                        <p>Used by: Toji Fushiguro</p>
+                    </div>
+                    
+                    <div class="preview-card">
+                        <img src="assets/techniques/chain-of-a-thousand-miles.png" alt="Chain of a Thousand Miles">
+                        <h4>Chain of a Thousand Miles</h4>
+                        <p>Used by: Various Users</p>
+                    </div>
+                    
+                    <a href="#" class="view-all-card">
+                        <div class="view-all-content">
+                            <i class="fas fa-arrow-right"></i>
+                            <span>View All Cursed Tools</span>
+                        </div>
+                    </a>
+                </div>
+            </section>
+            
+            <!-- Cursed Objects Preview -->
+            <section id="cursed-objects" class="technique-section">
+                <h2 class="technique-category-title">CURSED OBJECTS</h2>
+                <p class="technique-category-description">Items imbued with powerful cursed energy, often containing parts of dangerous curses or serving special jujutsu purposes.</p>
+                
+                <!-- Preview with "View All" -->
+                <div class="preview-grid">
+                    <div class="preview-card">
+                        <img src="assets/techniques/sukuna-finger.png" alt="Sukuna's Finger">
+                        <h4>Sukuna's Fingers</h4>
+                        <p>Special Grade Cursed Object</p>
+                    </div>
+                    
+                    <div class="preview-card">
+                        <img src="assets/techniques/death-paintings.png" alt="Death Paintings">
+                        <h4>Death Paintings</h4>
+                        <p>Special Grade Cursed Objects</p>
+                    </div>
+                    
+                    <div class="preview-card">
+                        <img src="assets/techniques/cursed-womb.png" alt="Cursed Womb">
+                        <h4>Cursed Womb</h4>
+                        <p>Special Grade Cursed Object</p>
+                    </div>
+                    
+                    <a href="#" class="view-all-card">
+                        <div class="view-all-content">
+                            <i class="fas fa-arrow-right"></i>
+                            <span>View All Cursed Objects</span>
+                        </div>
+                    </a>
+                </div>
+            </section>
+        </main>
+    </div>
+    
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="assets/Site-logo.png" alt="Site Logo">
+            </div>
+            <div class="footer-links">
+                <div class="footer-section">
+                    <h3>Navigation</h3>
+                    <ul>
+                        <li><a href="/index.html">Home</a></li>
+                        <li><a href="/pages/story.html">Story</a></li>
+                        <li><a href="/pages/character.html">Characters</a></li>
+                        <li><a href="#techniques-header">Techniques</a></li>
+                        <li><a href="#techniques-header">News</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Categories</h3>
+                    <ul>
+                        <li><a href="#innate-techniques">Innate Techniques</a></li>
+                        <li><a href="#domain-expansions">Domain Expansions</a></li>
+                        <li><a href="#shikigami">Shikigami</a></li>
+                        <li><a href="#cursed-tools">Cursed Tools</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Community</h3>
+                    <ul>
+                        <li><a href="#">Forums</a></li>
+                        <li><a href="#">Fan Art</a></li>
+                        <li><a href="#">Theories</a></li>
+                        <li><a href="#">News</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Jujutsu Kaisen Wiki Fan Site. This is a fan-made website and is not affiliated with the official Jujutsu Kaisen franchise.</p>
+        </div>
+    </footer>
+
+    <script src="/js/techniques.js"></script>
+</body>
+</html>

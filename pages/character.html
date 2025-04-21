@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/characters.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <title>Characters | Jujutsu Kaisen Wiki</title>
+</head>
+<body>
+    <!-- Navbar -->
+    <header>
+        <a href="/index.html" class="logo">
+            <img src="/assets/Site-logo.png" class="logo-img" alt="Site Logo">
+        </a>
+
+        <div class="nav-container">
+            <nav>
+                <ul class="navlist">
+                    <li><a href="/index.html">HOME</a></li>
+                    <li><a href="/pages/story.html">STORY</a></li>
+                    <li><a href="#characters-header" class="active">CHARACTERS</a></li>
+                    <li><a href="/pages/techniques.html">TECHNIQUES</a></li>
+                    <li><a href="/pages/news.html">NEWS</a></li>
+                    <li><a href="/pages/about.html">ABOUT</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Characters Page Header -->
+    <section class="characters-header" id="characters-header">
+        <div class="characters-header-overlay"></div>
+        <div class="characters-header-content">
+            <h1>CHARACTERS</h1>
+            <p>Explore the world of Jujutsu Kaisen through its diverse cast of sorcerers, cursed spirits, and allies.</p>
+        </div>
+    </section>
+
+    <!-- Characters Content Section -->
+    <section class="characters-content">
+        <!-- Sidebar Navigation -->
+        <aside class="characters-sidebar">
+            <div class="sidebar-search">
+                <input type="text" placeholder="Search characters..." id="character-search">
+                <button class="search-btn"><i class="fa fa-search"></i></button>
+            </div>
+            
+            <nav class="sidebar-nav">
+                <div class="sidebar-category">
+                    <div class="category-header">
+                        <h3>Tokyo Jujutsu High</h3>
+                        <i class="fa fa-chevron-down"></i>
+                    </div>
+                    <ul class="category-list active">
+                        <li><a href="#yuji-itadori">Yuji Itadori</a></li>
+                        <li><a href="#megumi-fushiguro">Megumi Fushiguro</a></li>
+                        <li><a href="#nobara-kugisaki">Nobara Kugisaki</a></li>
+                        <li><a href="#satoru-gojo">Satoru Gojo</a></li>
+                        <li><a href="#kento-nanami">Kento Nanami</a></li>
+                        <li><a href="#maki-zenin">Maki Zenin</a></li>
+                        <li><a href="#toge-inumaki">Toge Inumaki</a></li>
+                        <li><a href="#panda">Panda</a></li>
+                        <li><a href="#yuta-okkotsu">Yuta Okkotsu</a></li>
+                    </ul>
+                </div>
+                
+                <div class="sidebar-category">
+                    <div class="category-header">
+                        <h3>Kyoto Jujutsu High</h3>
+                        <i class="fa fa-chevron-down"></i>
+                    </div>
+                    <ul class="category-list">
+                        <li><a href="#aoi-todo">Aoi Todo</a></li>
+                        <li><a href="#mai-zenin">Mai Zenin</a></li>
+                        <li><a href="#kasumi-miwa">Kasumi Miwa</a></li>
+                        <li><a href="#noritoshi-kamo">Noritoshi Kamo</a></li>
+                        <li><a href="#momo-nishimiya">Momo Nishimiya</a></li>
+                        <li><a href="#utahime-iori">Utahime Iori</a></li>
+                        <li><a href="#yoshinobu-gakuganji">Yoshinobu Gakuganji</a></li>
+                    </ul>
+                </div>
+                
+                <div class="sidebar-category">
+                    <div class="category-header">
+                        <h3>Curses & Antagonists</h3>
+                        <i class="fa fa-chevron-down"></i>
+                    </div>
+                    <ul class="category-list">
+                        <li><a href="#ryomen-sukuna">Ryomen Sukuna</a></li>
+                        <li><a href="#mahito">Mahito</a></li>
+                        <li><a href="#jogo">Jogo</a></li>
+                        <li><a href="#hanami">Hanami</a></li>
+                        <li><a href="#dagon">Dagon</a></li>
+                        <li><a href="#choso">Choso</a></li>
+                        <li><a href="#suguru-geto">Suguru Geto</a></li>
+                        <li><a href="#kenjaku">Kenjaku</a></li>
+                    </ul>
+                </div>
+                
+                <div class="sidebar-category">
+                    <div class="category-header">
+                        <h3>Other Characters</h3>
+                        <i class="fa fa-chevron-down"></i>
+                    </div>
+                    <ul class="category-list">
+                        <li><a href="#junpei-yoshino">Junpei Yoshino</a></li>
+                        <li><a href="#mei-mei">Mei Mei</a></li>
+                        <li><a href="#ui-ui">Ui Ui</a></li>
+                        <li><a href="#masamichi-yaga">Masamichi Yaga</a></li>
+                        <li><a href="#ijichi">Kiyotaka Ijichi</a></li>
+                        <li><a href="#gakuji-ino">Takuma Ino</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </aside>
+        
+        <!-- Main Characters List -->
+        <main class="characters-main">
+            <div class="characters-filter">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="tokyo">Tokyo</button>
+                <button class="filter-btn" data-filter="kyoto">Kyoto</button>
+                <button class="filter-btn" data-filter="curses">Curses</button>
+                <button class="filter-btn" data-filter="others">Others</button>
+            </div>
+            
+            <div class="characters-grid">
+                <!-- Tokyo Jujutsu High Characters -->
+                <div class="character-item" data-category="tokyo" id="yuji-itadori">
+                    <div class="character-card">
+                        <div class="character-img-container">
+                            <img src="/assets/yuji.jpg" alt="Yuji Itadori" class="character-img">
+                        </div>
+                        <h3 class="character-name">Yuji Itadori</h3>
+                        <p class="character-affiliation">Tokyo Jujutsu High</p>
+                    </div>
+                </div>
+                
+                <div class="character-item" data-category="tokyo" id="megumi-fushiguro">
+                    <div class="character-card">
+                        <div class="character-img-container">
+                            <img src="/assets/megumi.jpg" alt="Megumi Fushiguro" class="character-img">
+                        </div>
+                        <h3 class="character-name">Megumi Fushiguro</h3>
+                        <p class="character-affiliation">Tokyo Jujutsu High</p>
+                    </div>
+                </div>
+                
+                <div class="character-item" data-category="tokyo" id="nobara-kugisaki">
+                    <div class="character-card">
+                        <div class="character-img-container">
+                            <img src="/assets/nobara.jpg" alt="Nobara Kugisaki" class="character-img">
+                        </div>
+                        <h3 class="character-name">Nobara Kugisaki</h3>
+                        <p class="character-affiliation">Tokyo Jujutsu High</p>
+                    </div>
+                </div>
+                
+                <div class="character-item" data-category="tokyo" id="satoru-gojo">
+                    <div class="character-card">
+                        <div class="character-img-container">
+                            <img src="/assets/satoro.jpg" alt="Satoru Gojo" class="character-img">
+                        </div>
+                        <h3 class="character-name">Satoru Gojo</h3>
+                        <p class="character-affiliation">Tokyo Jujutsu High</p>
+                    </div>
+                </div>
+
+                <div class="character-item" data-category="tokyo" id="kento-nanami">
+                    <div class="character-card">
+                        <div class="character-img-container">
+                            <img src="/assets/nanami.jpg" alt="Kennto Nanami" class="character-img">
+                        </div>
+                        <h3 class="character-name">Kento Nanami</h3>
+                        <p class="character-affiliation">Tokyo Jujutsu High</p>
+                    </div>
+                </div>
+                
+                <div class="character-item" data-category="tokyo" id="maki-zenin">
+                    <div class="character-card">
+                        <div class="character-img-container">
+                            <img src="/assets/maki.jpg" alt="Maki Zenin" class="character-img">
+                        </div>
+                        <h3 class="character-name">Maki Zenin</h3>
+                        <p class="character-affiliation">Tokyo Jujutsu High</p>
+                    </div>
+                </div>
+
+                <div class="character-item" data-category="tokyo" id="toge-inumaki">
+                    <div class="character-card">
+                        <div class="character-img-container">
+                            <img src="/assets/toge.jpg" alt="Toge Inumaki" class="character-img">
+                        </div>
+                        <h3 class="character-name">Toge Inumaki</h3>
+                        <p class="character-affiliation">Tokyo Jujutsu High</p>
+                    </div>
+                </div>
+
+                <div class="character-item" data-category="tokyo" id="panda">
+                    <div class="character-card">
+                        <div class="character-img-container">
+                            <img src="/assets/panda.jpg" alt="Panda" class="character-img">
+                        </div>
+                        <h3 class="character-name">Panda</h3>
+                        <p class="character-affiliation">Tokyo Jujutsu High</p>
+                    </div>
+                </div>
+
+                <div class="character-item" data-category="tokyo" id="yuta-okkotsu">
+                    <div class="character-card">
+                        <div class="character-img-container">
+                            <img src="/assets/yuta.jpg" alt="Yuta Okkotsu" class="character-img">
+                        </div>
+                        <h3 class="character-name">Yuta Okkotsu</h3>
+                        <p class="character-affiliation">Tokyo Jujutsu High</p>
+                    </div>
+                </div>
+                
+                <!-- Kyoto Jujutsu High Characters -->
+                <div class="character-item" data-category="kyoto" id="aoi-todo">
+                    <div class="character-card">
+                        <div class="character-img-container">
+                            <img src="/assets/todo.jpg" alt="Aoi Todo" class="character-img">
+                        </div>
+                        <h3 class="character-name">Aoi Todo</h3>
+                        <p class="character-affiliation">Kyoto Jujutsu High</p>
+                    </div>
+                </div>
+                
+                <div class="character-item" data-category="kyoto" id="mai-zenin">
+                    <div class="character-card">
+                        <div class="character-img-container">
+                            <img src="/assets/mai.jpg" alt="Mai Zenin" class="character-img">
+                        </div>
+                        <h3 class="character-name">Mai Zenin</h3>
+                        <p class="character-affiliation">Kyoto Jujutsu High</p>
+                    </div>
+                </div>
+
+                <div class="character-item" data-category="kyoto" id="kasumi-miwa">
+                    <div class="character-card">
+                        <div class="character-img-container">
+                            <img src="/assets/kasumi.jpg" alt="Kasumi Miwa" class="character-img">
+                        </div>
+                        <h3 class="character-name">Kasumi Miwa</h3>
+                        <p class="character-affiliation">Kyoto Jujutsu High</p>
+                    </div>
+                </div>
+                
+                <div class="character-item" data-category="kyoto" id="noritoshi-kamo">
+                    <div class="character-card">
+                        <div class="character-img-container">
+                            <img src="/assets/kamo.jpg" alt="Noritoshi Kamo" class="character-img">
+                        </div>
+                        <h3 class="character-name">Noritoshi Kamo</h3>
+                        <p class="character-affiliation">Kyoto Jujutsu High</p>
+                    </div>
+                </div>
+
+                <div class="character-item" data-category="kyoto" id="momo-nishimiya">
+                    <div class="character-card">
+                        <div class="character-img-container">
+                            <img src="/assets/momo.jpg" alt="Momo Nishimiya" class="character-img">
+                        </div>
+                        <h3 class="character-name">Momo Nishimiya</h3>
+                        <p class="character-affiliation">Kyoto Jujutsu High</p>
+                    </div>
+                </div>
+
+                <div class="character-item" data-category="kyoto" id="utahime-iori">
+                    <div class="character-card">
+                        <div class="character-img-container">
+                            <img src="/assets/iori.jpg" alt="Utahime Iori" class="character-img">
+                        </div>
+                        <h3 class="character-name">Utahime Iori</h3>
+                        <p class="character-affiliation">Kyoto Jujutsu High</p>
+                    </div>
+                </div>
+
+                <div class="character-item" data-category="kyoto" id="yoshinobu-gakuganji">
+                    <div class="character-card">
+                        <div class="character-img-container">
+                            <img src="/assets/yoshi.jpg" alt="Yoshinobu Gakuganji" class="character-img">
+                        </div>
+                        <h3 class="character-name">Yoshinobu Gakuganji</h3>
+                        <p class="character-affiliation">Kyoto Jujutsu High</p>
+                    </div>
+                </div>
+
+                <!-- Curses & Antagonists -->
+                <div class="character-item" data-category="curses" id="ryomen-sukuna">
+                    <div class="character-card">
+                        <div class="character-img-container">
+                            <img src="/assets/sukuna.jpg" alt="Ryomen Sukuna" class="character-img">
+                        </div>
+                        <h3 class="character-name">Ryomen Sukuna</h3>
+                        <p class="character-affiliation">King of Curses</p>
+                    </div>
+                </div>
+                
+                <div class="character-item" data-category="curses" id="mahito">
+                    <div class="character-card">
+                        <div class="character-img-container">
+                            <img src="/assets/mahito.jpg" alt="Mahito" class="character-img">
+                        </div>
+                        <h3 class="character-name">Mahito</h3>
+                        <p class="character-affiliation">Special Grade Curse</p>
+                    </div>
+                </div>
+
+                <div class="character-item" data-category="curses" id="jogo">
+                    <div class="character-card">
+                        <div class="character-img-container">
+                            <img src="/assets/jogo.jpg" alt="Jogo" class="character-img">
+                        </div>
+                        <h3 class="character-name">Jogo</h3>
+                        <p class="character-affiliation">Special Grade Curse</p>
+                    </div>
+                </div>
+                
+                <div class="character-item" data-category="curses" id="hanami">
+                    <div class="character-card">
+                        <div class="character-img-container">
+                            <img src="/assets/hanami.jpg" alt="Hanami" class="character-img">
+                        </div>
+                        <h3 class="character-name">Hanami</h3>
+                        <p class="character-affiliation">Special Grade Curse</p>
+                    </div>
+                </div>
+
+                <div class="character-item" data-category="curses" id="dagon">
+                    <div class="character-card">
+                        <div class="character-img-container">
+                            <img src="/assets/dagon.avif" alt="Dagon" class="character-img">
+                        </div>
+                        <h3 class="character-name">Dagon</h3>
+                        <p class="character-affiliation">Special Grade Curse</p>
+                    </div>
+                </div>
+
+                <div class="character-item" data-category="curses" id="choso">
+                    <div class="character-card">
+                        <div class="character-img-container">
+                            <img src="/assets/choso.jpg" alt="Choso" class="character-img">
+                        </div>
+                        <h3 class="character-name">Choso</h3>
+                        <p class="character-affiliation">Special Grade Curse</p>
+                    </div>
+                </div>
+
+                <div class="character-item" data-category="curses" id="suguru-geto">
+                    <div class="character-card">
+                        <div class="character-img-container">
+                            <img src="/assets/geto.jpg" alt="Dagon" class="character-img">
+                        </div>
+                        <h3 class="character-name">Suguru Geto</h3>
+                        <p class="character-affiliation">Special Grade Curse</p>
+                    </div>
+                </div>
+
+                <div class="character-item" data-category="curses" id="kenjaku">
+                    <div class="character-card">
+                        <div class="character-img-container">
+                            <img src="/assets/kenjaku.jpg" alt="Kenjaku" class="character-img">
+                        </div>
+                        <h3 class="character-name">Kenjaku</h3>
+                        <p class="character-affiliation">Special Grade Curse</p>
+                    </div>
+                </div>
+
+                <!-- Other Characters -->
+                <div class="character-item" data-category="others" id="junpei-yoshino">
+                    <div class="character-card">
+                        <div class="character-img-container">
+                            <img src="/assets/junpei.jpg" alt="Junpei" class="character-img">
+                        </div>
+                        <h3 class="character-name">Junpei Yoshino</h3>
+                        <p class="character-affiliation">Curse User</p>
+                    </div>
+                </div>
+
+                <div class="character-item" data-category="others" id="meimei">
+                    <div class="character-card">
+                        <div class="character-img-container">
+                            <img src="/assets/meimei.jpg" alt="Junpei" class="character-img">
+                        </div>
+                        <h3 class="character-name">Meimei</h3>
+                        <p class="character-affiliation">Jujutsu Sorcerer</p>
+                    </div>
+                </div>
+
+                <div class="character-item" data-category="others" id="uiui">
+                    <div class="character-card">
+                        <div class="character-img-container">
+                            <img src="/assets/uiui.jpg" alt="Ui Ui" class="character-img">
+                        </div>
+                        <h3 class="character-name">Ui Ui</h3>
+                        <p class="character-affiliation">Jujutsu Sorcerer</p>
+                    </div>
+                </div>
+
+                <div class="character-item" data-category="others" id="masamichi-yaga">
+                    <div class="character-card">
+                        <div class="character-img-container">
+                            <img src="/assets/masamichi.jpg" alt="Masamichi Yaga" class="character-img">
+                        </div>
+                        <h3 class="character-name">Masamichi Yaga</h3>
+                        <p class="character-affiliation">Jujutsu Sorcerer</p>
+                    </div>
+                </div>
+
+                <div class="character-item" data-category="others" id="kiyotaka-ijichi">
+                    <div class="character-card">
+                        <div class="character-img-container">
+                            <img src="/assets/kiyo.jpg" alt="Kiyotaka Ijichi" class="character-img">
+                        </div>
+                        <h3 class="character-name">Kiyotaka Ijichi</h3>
+                        <p class="character-affiliation">Jujutsu Sorcerer</p>
+                    </div>
+                </div>
+
+                <div class="character-item" data-category="others" id="takuma-ino">
+                    <div class="character-card">
+                        <div class="character-img-container">
+                            <img src="/assets/ino.jpg" alt="Takuma Ino" class="character-img">
+                        </div>
+                        <h3 class="character-name">Takuma Ino</h3>
+                        <p class="character-affiliation">Jujutsu Sorcerer</p>
+                    </div>
+                </div>
+                
+                <!-- Add more characters as needed -->
+                <!-- This is where you'd include all the other characters from your sidebar categorizations -->
+            </div>
+            
+            <!-- Load More Button -->
+            <div class="load-more-container">
+                <button class="load-more-btn">LOAD MORE CHARACTERS</button>
+            </div>
+        </main>
+    </section>
+    
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="/assets/Site-logo.png" alt="Jujutsu Kaisen Wiki Logo" class="footer-logo-img">
+            </div>
+            
+            <div class="footer-links">
+                <div class="footer-links-column">
+                    <h4>Navigation</h4>
+                    <ul>
+                        <li><a href="/index.html">HOME</a></li>
+                        <li><a href="/pages/story.html">STORY</a></li>
+                        <li><a href="/pages//character.html">CHARACTERS</a></li>
+                        <li><a href="/pages/techniques.html">TECHNIQUES</a></li>
+                        <li><a href="/pages/news.html">NEWS</a></li>
+                        <li><a href="/pages/about.html">ABOUT</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-links-column">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="#">Manga Chapters</a></li>
+                        <li><a href="#">Anime Episodes</a></li>
+                        <li><a href="#">Timeline</a></li>
+                        <li><a href="#">Gallery</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-links-column">
+                    <h4>Community</h4>
+                    <ul>
+                        <li><a href="#">Forum</a></li>
+                        <li><a href="#">Theories</a></li>
+                        <li><a href="#">Fan Art</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-social">
+                <h4>Follow Us</h4>
+                <div class="social-icons">
+                    <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-discord"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2025 by <span style="color: red;">Christian Fernandez</span>. All rights reserved. This is a fan-made website. Jujutsu Kaisen is owned by Gege Akutami and MAPPA.</p>
+        </div>
+    </footer>
+
+    <script src="/js/characters.js"></script>
+</body>
+</html>
