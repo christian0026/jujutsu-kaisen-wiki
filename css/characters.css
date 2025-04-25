@@ -84,6 +84,7 @@ header {
 .characters-header {
     position: relative;
     height: 300px;
+    background-color: black;
     background-image: url('../assets/characters-banner.jpg');
     background-size: cover;
     background-position: center;

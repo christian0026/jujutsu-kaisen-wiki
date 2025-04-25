@@ -84,6 +84,7 @@ header {
 .about-banner {
     position: relative;
     height: 400px;
+    background-color: black;
     background-image: url('../assets/about/banner-bg.jpg');
     background-size: cover;
     background-position: center;
