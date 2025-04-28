@@ -1,0 +1,19 @@
+{
+    "rewrites": [
+      { "source": "/about", "destination": "/about.html" },
+      { "source": "/character", "destination": "/character.html" },
+      { "source": "/contact", "destination": "/contact.html" },
+      { "source": "/news", "destination": "/news.html" },
+      { "source": "/story", "destination": "/story.html" },
+      { "source": "/techniques", "destination": "/techniques.html" },
+      
+      { "source": "/characters/gojo", "destination": "/pages/characters/gojo.html" },
+      { "source": "/characters/yuji", "destination": "/pages/characters/yuji.html" },
+  
+      { "source": "/techniques/blood-manipulation", "destination": "/pages/specific pages/blood-manipulation.html" },
+      { "source": "/techniques/limitless", "destination": "/pages/specific pages/limitless.html" },
+      { "source": "/techniques/straw-doll", "destination": "/pages/specific pages/straw-doll.html" },
+      { "source": "/techniques/ten-shadows", "destination": "/pages/specific pages/ten-shadows.html" }
+    ]
+  }
+  
