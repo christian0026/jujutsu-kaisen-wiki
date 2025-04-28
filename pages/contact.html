@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/contact.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <title>Contact Us | Jujutsu Kaisen Wiki</title>
+    <!-- EmailJS CDN -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3.2.0/dist/email.min.js"></script>
+    <script>
+        (function() {
+            emailjs.init('7Kwf9Rkc38BdW1Oar');
+        })();
+    </script>
+</head>
+<body>
+     <!-- Navbar -->
+    <header>
+        <a href="/index.html" class="logo">
+            <img src="/assets/Site-logo.png" class="logo-img" alt="Site Logo">
+        </a>
+
+        <div class="nav-container">
+            <nav>
+                <ul class="navlist">
+                    <li><a href="/index.html">HOME</a></li>
+                    <li><a href="/pages/story.html">STORY</a></li>
+                    <li><a href="/pages/character.html">CHARACTERS</a></li>
+                    <li><a href="/pages/techniques.html">TECHNIQUES</a></li>
+                    <li><a href="/pages/news.html">NEWS</a></li>
+                    <li><a href="/pages/about.html">ABOUT</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <!-- Contact Hero Section -->
+    <section class="contact-hero">
+        <div class="contact-hero-overlay"></div>
+        <div class="contact-hero-content">
+            <h1 class="contact-title">CONTACT US</h1>
+            <p class="contact-subtitle">Join the Jujutsu Sorcery Network</p>
+        </div>
+    </section>
+    
+    <!-- Contact Form Section -->
+    <section class="contact-section">
+        <div class="contact-container">
+            <div class="contact-info">
+                <h2>CONNECT WITH US</h2>
+                <p>Have questions, suggestions, or want to contribute to our Jujutsu Kaisen community? Reach out to us using the form, and a member of our team will get back to you as soon as possible.</p>
+                
+                <div class="contact-methods">
+                    <div class="contact-method">
+                        <i class="fas fa-envelope"></i>
+                        <div class="method-details">
+                            <h3>Email Us</h3>
+                            <p>christianfernandezxc2@gmail.com</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-method">
+                        <i class="fas fa-clock"></i>
+                        <div class="method-details">
+                            <h3>Response Time</h3>
+                            <p>Within 24-48 hours</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="social-links">
+                    <a href="https://x.com/jjk_wiki" target="_blank" class="social-link"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="https://www.instagram.com/cxcx.chann/" target="_blank" class="social-link"><i class="fab fa-instagram"></i></a>
+                    <a href="https://discord.gg/ap6ezmBm" target="_blank" class="social-link"><i class="fab fa-discord"></i></a>
+                    <a href="https://github.com/christian0026" target="_blank" class="social-icon"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+            
+            <div class="contact-form-container">
+                <form id="contact-form" class="contact-form">
+                    <div class="form-group">
+                        <label for="name">Your Name</label>
+                        <input type="text" id="name" name="name" required>
+                        <span class="error-message" id="name-error"></span>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" required>
+                        <span class="error-message" id="email-error"></span>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <select id="subject" name="subject" required>
+                            <option value="" disabled selected>Select a topic</option>
+                            <option value="general">General Inquiry</option>
+                            <option value="content">Content Suggestion</option>
+                            <option value="correction">Correction Request</option>
+                            <option value="collaboration">Collaboration Proposal</option>
+                            <option value="other">Other</option>
+                        </select>
+                        <span class="error-message" id="subject-error"></span>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">Your Message</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                        <span class="error-message" id="message-error"></span>
+                    </div>
+                    
+                    <div class="form-group checkbox-group">
+                        <input type="checkbox" id="newsletter" name="newsletter">
+                        <label for="newsletter">Subscribe to our newsletter for updates</label>
+                    </div>
+                    
+                    <button type="submit" class="submit-btn">
+                        <span class="btn-text">SEND MESSAGE</span>
+                        <span class="spinner" id="spinner"></span>
+                    </button>
+                    
+                    <div class="form-message" id="form-message"></div>
+                </form>
+            </div>
+        </div>
+    </section>
+    
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="faq-container">
+            <h2 class="faq-title">FREQUENTLY ASKED QUESTIONS</h2>
+            
+            <div class="faq-list">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>How can I contribute content to the wiki?</h3>
+                        <span class="faq-icon"><i class="fas fa-plus"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>You can contribute by submitting content through our contact form. Select "Content Suggestion" as the subject and provide details about what you'd like to add. Our editorial team will review your submission.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>How do I report incorrect information?</h3>
+                        <span class="faq-icon"><i class="fas fa-plus"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Use our contact form with the subject "Correction Request" and provide the page URL along with the correct information. Our team will verify and update the content accordingly.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Do you accept fan art submissions?</h3>
+                        <span class="faq-icon"><i class="fas fa-plus"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes! We love featuring fan art. Please contact us with the subject "Content Suggestion" and include links to your artwork. Make sure you own the rights to any content you submit.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>How can I join the wiki team?</h3>
+                        <span class="faq-icon"><i class="fas fa-plus"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>We're always looking for passionate Jujutsu Kaisen fans to join our team. Send us a message with the subject "Collaboration Proposal" detailing your skills and experience with wikis or content creation.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+     <!-- Footer -->
+     <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="/assets/Site-logo.png" alt="Jujutsu Kaisen Wiki Logo" class="footer-logo-img">
+            </div>
+            
+            <div class="footer-links">
+                <div class="footer-links-column">
+                    <h4>Navigation</h4>
+                    <ul>
+                        <li><a href="/index.html">HOME</a></li>
+                        <li><a href="/pages/story.html">STORY</a></li>
+                        <li><a href="/pages/character.html">CHARACTERS</a></li>
+                        <li><a href="/pages/techniques.html">TECHNIQUES</a></li>
+                        <li><a href="/pages/news.html">NEWS</a></li>
+                        <li><a href="/pages/about.html">ABOUT</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-links-column">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="https://www.viz.com/shonenjump/chapters/jujutsu-kaisen" target="_blank">Manga Chapters</a></li>
+                        <li><a href="https://www.imdb.com/title/tt12343534/episodes/" target="_blank">Anime Episodes</a></li>
+                        <li><a href="https://www.cbr.com/jjk-anime-complete-timeline/" target="_blank">Timeline</a></li>
+                        <li><a href="https://jump.fandom.com/wiki/Jujutsu_Kaisen/Image_Gallery" target="_blank">Gallery</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-links-column">
+                    <h4>Community</h4>
+                    <ul>
+                        <li><a href="https://www.fanverse.org/forums/jujutsu-kaisen/" target="_blank">Forum</a></li>
+                        <li><a href="https://gamerant.com/jujutsu-kaisen-best-fan-theories/" target="_blank">Theories</a></li>
+                        <li><a href="https://www.pinterest.com/thisanimething/jjk/" target="_blank">Fan Art</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-social">
+                <h4>Follow Us</h4>
+                <div class="social-icons">
+                    <a href="https://x.com/jjk_wiki" target="_blank" class="social-icon"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="https://www.instagram.com/cxcx.chann/" target="_blank" class="social-icon"><i class="fab fa-instagram"></i></a>
+                    <a href="https://discord.gg/ap6ezmBm" target="_blank" class="social-icon"><i class="fab fa-discord"></i></a>
+                    <a href="https://github.com/christian0026" class="social-icon"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2025 by <span style="color: red;">Christian Fernandez</span>. All rights reserved. This is a fan-made website. Jujutsu Kaisen is owned by Gege Akutami and MAPPA.</p>
+        </div>
+    </footer>
+    
+    <script src="/js/contact.js"></script>
+</body>
+</html>
